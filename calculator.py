@@ -1,3 +1,4 @@
+
 from tkinter import *
 
 root = Tk()
@@ -16,50 +17,50 @@ def button_clear():
 
 def button_add():
     first_number = entry.get()
-    global f_num
-    global math
-    math = "addition"
-    f_num = int(first_number)
+    global num
+    global operator
+    operator = "addition"
+    num = int(first_number)
     entry.delete(0, END)
 
 def button_equal():
     second_number = entry.get()
     entry.delete(0, END)
 
-    if(math == "addition"):
-        entry.insert(0, f_num + int(second_number))
+    if(operator == "addition"):
+        entry.insert(0, num + int(second_number))
 
-    if (math == "subtraction"):
-        entry.insert(0, f_num - int(second_number))
+    if (operator == "subtraction"):
+        entry.insert(0, num - int(second_number))
 
-    if (math == "multiplication"):
-        entry.insert(0, f_num * int(second_number))
+    if (operator == "multiplication"):
+        entry.insert(0, num * int(second_number))
 
-    if (math == "division"):
-        entry.insert(0, f_num / int(second_number))
+    if (operator == "division"):
+        entry.insert(0, num / int(second_number))
 
 def button_subtract():
     first_number = entry.get()
-    global f_num
-    global math
-    math = "subtraction"
-    f_num = int(first_number)
+    global num
+    global operator
+    operator = "subtraction"
+    num = int(first_number)
     entry.delete(0, END)
 
 def button_divide():
     first_number = entry.get()
-    global f_num
-    global math
-    math = "division"
-    f_num = int(first_number)
+    global num
+    global operator
+    operator = "division"
+    num = int(first_number)
     entry.delete(0, END)
 
 def button_multiply():
     first_number = entry.get()
-    global f_num
-    global math
-    math = "multiplication"
-    f_num = int(first_number)
+    global num
+    global operator
+    operator = "multiplication"
+    num = int(first_number)
     entry.delete(0, END)
 
 
